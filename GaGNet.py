@@ -160,7 +160,7 @@ class GlanceBlock(nn.Module):
         elif acti_type == "relu":
             acti = nn.ReLU()
         else:
-            raise RuntimeError("a activation function must be assigned!")
+            raise RuntimeError("the activation function must be assigned!")
         self.linear_g = nn.Sequential(
             nn.Conv1d(d_feat, fft_num//2+1, 1),
             acti
