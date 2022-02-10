@@ -43,7 +43,7 @@ class GaGNet(nn.Module):
 
         Be careful!!! track_running_stats in IN is False by default, i.e., in both training and validation phases, the
         statistics from the batch data are calculated, which causes the non-causality. For BN, however, track_running_sta
-        ts are True by default, i.e., in the training phase, the batch statistics are calculated and in the inference
+        ts is True by default, i.e., in the training phase, the batch statistics are calculated and in the inference
         phase, the global statistics will be fixed and lead to causal inference. If you choose IN, donot forget to switch
         the param track_running_stats into True!
         """
